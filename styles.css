@@ -332,4 +332,15 @@ body {
   .start-button {
     letter-spacing: 4px;
   }
+  .letter-box::before,
+.letter-box::after {
+  pointer-events: none;
+}
+
+.join-form,
+.join-form input,
+.join-form button {
+  position: relative;
+  z-index: 2;
+}
 }
