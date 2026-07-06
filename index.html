@@ -8,10 +8,18 @@
 </head>
 
 <body>
+
+  <!-- Hidden Netlify form detection -->
+  <form name="join-life-quest" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="join-life-quest">
+    <input type="email" name="email">
+    <input name="bot-field">
+  </form>
+
   <main class="start-screen" id="startScreen">
     <div class="start-content">
       <img src="assets/logo/lifequest-logo.png" alt="Life Quest" class="hero-logo">
-      <button class="start-button" id="startButton">START HERE</button>
+      <button type="button" class="start-button" id="startButton">START HERE</button>
     </div>
   </main>
 
@@ -38,11 +46,7 @@
       <p>I needed a way to see the adventure inside them.</p>
       <p>So this tool was forged.</p>
 
-      <p>Life Quest was made to turn real life into quests. Not to escape the world, but to walk through it with purpose. Not to pretend you are someone else, but to remember that you are already the one holding the sword.</p>
-
-      <p>Some quests will be written by your own hand.</p>
-      <p>Some will be offered by the realm.</p>
-      <p>Some paths will remain locked until they have been earned.</p>
+      <p>Life Quest was made to turn real life into quests. Not to escape the world, but to walk through it with purpose.</p>
 
       <p>This tool will not walk the road for you. It will not shout every answer. It will not remove the weight from your pack.</p>
 
@@ -50,19 +54,21 @@
       <p>It may help you begin again.</p>
       <p>And it may help you notice that the small task in front of you was never small at all. It was part of the larger quest.</p>
 
-      <p>I leave this now in your hands.</p>
-
       <p>Begin where you are.<br>
       Gather what you can.<br>
       Complete the next quest.</p>
 
       <p class="final-line"><em>The road ahead is yours.</em></p>
 
-      <form name="join-life-quest" method="POST" data-netlify="true" class="join-form">
-  <input type="hidden" name="form-name" value="join-life-quest">
-  <input type="email" name="email" placeholder="Enter your email" required>
-  <button type="submit">Join Life Quest</button>
-</form>
+      <form name="join-life-quest" method="POST" data-netlify="true" action="/success.html" class="join-form">
+        <input type="hidden" name="form-name" value="join-life-quest">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Join Life Quest</button>
+      </form>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/getlifequest/" target="_blank">Instagram</a>
+      </div>
     </div>
   </section>
 
