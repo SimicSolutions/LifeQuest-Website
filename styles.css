@@ -343,4 +343,11 @@ body {
   position: relative;
   z-index: 2;
 }
+.join-form,
+.join-form input,
+.join-form button {
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
 }
