@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life Quest</title>
+  <title>Life Quest | A Real-Life RPG App for Building a Better Life</title>
+  <meta name="description" content="Life Quest is a real-life RPG app that turns goals, tasks, journals, inventory, and personal growth into meaningful quests. Build a good life on purpose.">
+  <meta name="theme-color" content="#050505">
+
+  <meta property="og:title" content="Life Quest — Life Isn’t a Checklist. It’s a Quest.">
+  <meta property="og:description" content="A real-life RPG app for returning to real life, tracking quests, building skills, and living with purpose.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lifequestapp.ca/">
+  <meta property="og:image" content="https://lifequestapp.ca/assets/logo/lifequest-logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Life Quest — Life Isn’t a Checklist. It’s a Quest.">
+  <meta name="twitter:description" content="A real-life RPG app for returning to real life, tracking quests, building skills, and living with purpose.">
+  <meta name="twitter:image" content="https://lifequestapp.ca/assets/logo/lifequest-logo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -29,7 +42,9 @@
     <div class="letter-box">
       <img src="assets/logo/lifequest-logo.png" alt="Life Quest" class="letter-logo">
 
-      <h1>The Road Ahead</h1>
+      <h1>Life Quest</h1>
+      <p class="letter-subtitle">A real-life RPG for returning to real life.</p>
+      <h2>The Road Ahead</h2>
 
       <p><em>To the traveler who now holds this tool,</em></p>
 
@@ -61,16 +76,68 @@
       <p class="final-line"><em>The road ahead is yours.</em></p>
 
       <form name="join-life-quest" method="POST" data-netlify="true" action="/success.html" class="join-form">
-  <input type="hidden" name="form-name" value="join-life-quest">
-  <input type="email" name="email" placeholder="Enter your email" required>
-  <button type="submit" onclick="console.log('button clicked')">Join Life Quest</button>
-</form>
+        <input type="hidden" name="form-name" value="join-life-quest">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Join Life Quest</button>
+      </form>
 
-      <div class="social-links">
-        <a href="https://www.instagram.com/getlifequest/" target="_blank">Instagram</a>
+      <div class="letter-links" aria-label="Life Quest social links">
+        <p class="letter-links-note">Follow the road as it is being built.</p>
+        <a href="https://www.instagram.com/getlifequest/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@LifeQuestApp-r8x" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.facebook.com/profile.php?id=61591769700104" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://discord.gg/BAJ6yh2Gr" target="_blank" rel="noopener noreferrer">Discord</a>
       </div>
+
+      <section class="content-section" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Questions from the Road</h2>
+
+        <div class="faq-item">
+          <h3>What is Life Quest?</h3>
+          <p>Life Quest is a real-life RPG app for turning ordinary life into quests, records, resources, and progress. It is built to help people return to real life with more purpose.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is this just another productivity app?</h3>
+          <p>No. Life Quest brings simple quests, journals, inventory, maps, and progress together so real life feels connected.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does Life Quest use streaks?</h3>
+          <p>No. Life Quest is not built around streak guilt. Life is lived in seasons. If you leave for a while, the app should help you return, not remind you that you failed.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="faq.html">Read the FAQ</a>
+        </div>
+      </section>
+
+      <section class="content-section" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>Life Quest is being built in public, one quest at a time. For updates, questions, or early interest, join the list above or follow the project below.</p>
+
+        <div class="contact-actions">
+          <a href="contact.html">Contact</a>
+          <a href="https://www.instagram.com/getlifequest/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.youtube.com/@LifeQuestApp-r8x" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.facebook.com/profile.php?id=61591769700104" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://discord.gg/BAJ6yh2Gr" target="_blank" rel="noopener noreferrer">Discord</a>
+        </div>
+      </section>
     </div>
   </section>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Life Quest",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS",
+      "description": "Life Quest is a real-life RPG app that turns goals, tasks, journals, inventory, and personal growth into meaningful quests.",
+      "url": "https://lifequestapp.ca/"
+    }
+  </script>
 
   <script src="script.js"></script>
 </body>

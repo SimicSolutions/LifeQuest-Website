@@ -242,6 +242,25 @@ body {
 .letter-box h1::after {
   margin: 24px auto 48px;
 }
+
+.letter-box h2 {
+  margin: 26px 0 36px;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-size: clamp(1.7rem, 5vw, 2.65rem);
+  letter-spacing: 3px;
+  color: #d7c48d;
+  text-align: center;
+}
+
+.letter-subtitle {
+  margin: -16px auto 34px;
+  max-width: 620px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  color: rgba(242, 240, 232, 0.68);
+  text-align: center;
+}
  
 .letter-box p {
   margin: 0 0 24px;
@@ -266,6 +285,52 @@ body {
   margin-top: 58px;
 }
  
+/* LETTER SOCIAL LINKS */
+
+.letter-links {
+  margin: 56px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.letter-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 138px;
+  padding: 11px 16px;
+  color: #f2f0e8;
+  border: 1px solid rgba(242, 240, 232, 0.38);
+  background: rgba(5, 5, 5, 0.56);
+  font-family: "Cinzel", serif;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.letter-links a:hover,
+.letter-links a:focus-visible {
+  color: #d7c48d;
+  border-color: #d7c48d;
+  background: rgba(215, 196, 141, 0.06);
+  box-shadow: 0 0 14px rgba(215, 196, 141, 0.15);
+  outline: none;
+}
+
+.letter-links-note {
+  width: 100%;
+  margin: 0 0 2px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  color: rgba(242, 240, 232, 0.58);
+}
+
 /* JOIN FORM */
  
 .join-form {
@@ -326,6 +391,99 @@ body {
   box-shadow: 0 0 14px rgba(215, 196, 141, 0.16);
 }
  
+/* SIMPLE CONTENT SECTIONS */
+
+.content-section {
+  max-width: 820px;
+  margin: 74px auto 0;
+  padding: clamp(34px, 6vw, 56px) clamp(24px, 6vw, 56px);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.032), rgba(0, 0, 0, 0.30)),
+    rgba(0, 0, 0, 0.58);
+  border: 1px solid rgba(242, 240, 232, 0.18);
+  box-shadow:
+    0 0 70px rgba(0, 0, 0, 0.62),
+    inset 0 0 42px rgba(255, 255, 255, 0.025);
+}
+
+.content-section h2 {
+  margin: 0 0 28px;
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.45rem, 4vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f2f0e8;
+}
+
+.content-section h3 {
+  margin: 26px 0 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #d7c48d;
+}
+
+.content-section p {
+  margin: 0 0 18px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.08rem, 2.5vw, 1.22rem);
+  line-height: 1.65;
+  color: rgba(242, 240, 232, 0.78);
+}
+
+.content-section a {
+  color: #d7c48d;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(215, 196, 141, 0.38);
+}
+
+.content-section a:hover,
+.content-section a:focus-visible {
+  color: #f2f0e8;
+  border-bottom-color: #f2f0e8;
+  outline: none;
+}
+
+.faq-item + .faq-item {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(242, 240, 232, 0.12);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.contact-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  padding: 12px 16px;
+  border: 1px solid rgba(242, 240, 232, 0.38);
+  background: rgba(5, 5, 5, 0.56);
+  color: #f2f0e8;
+  font-family: "Cinzel", serif;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contact-actions a:hover,
+.contact-actions a:focus-visible {
+  color: #d7c48d;
+  border-color: #d7c48d;
+  box-shadow: 0 0 14px rgba(215, 196, 141, 0.15);
+  outline: none;
+}
+
 /* MOBILE */
  
 @media (max-width: 600px) {
@@ -356,6 +514,20 @@ body {
  
   .start-button {
     letter-spacing: 4px;
+  }
+
+  .letter-links {
+    gap: 10px;
+    margin-top: 42px;
+  }
+
+  .letter-links a,
+  .contact-actions a {
+    width: 100%;
+  }
+
+  .content-section {
+    margin-top: 52px;
   }
 }
  
