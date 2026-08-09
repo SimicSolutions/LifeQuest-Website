@@ -1,0 +1,22 @@
+name: Improvement or idea
+description: Preserve a worthwhile website or visitor-experience improvement.
+title: "[Improve] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: opportunity
+    attributes:
+      label: What could be better?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What should improve for the visitor or Life Quest?
+    validations:
+      required: true
+  - type: textarea
+    id: direction
+    attributes:
+      label: Possible direction
+      description: Optional. Capture the idea without treating it as the final solution.

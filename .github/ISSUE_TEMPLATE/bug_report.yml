@@ -1,0 +1,32 @@
+name: Website problem
+description: Record something broken, confusing, slow, or inconsistent.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is happening?
+      description: Describe what happened and what you expected.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page or URL
+      placeholder: https://lifequestapp.ca/...
+  - type: dropdown
+    id: device
+    attributes:
+      label: Where did it happen?
+      options:
+        - iPhone
+        - iPad
+        - Mac
+        - Windows PC
+        - Android
+        - Other
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, recording, or extra context
