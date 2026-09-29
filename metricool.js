@@ -7,7 +7,7 @@
   script.src = "https://tracker.metricool.com/resources/be.js";
   script.onload = function () {
     if (window.beTracker) {
-      window.beTracker.t({ hash: "8ff290495957c24e4b3b76c9c55d3f89" });
+      window.beTracker.t({ hash: "fa01c8633f4afadb9840d63454b44d64" });
     }
   };
   document.head.appendChild(script);
