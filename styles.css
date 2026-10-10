@@ -159,6 +159,25 @@ body {
 .letter-screen.fade-in {
   animation: letterReveal 1.8s ease forwards;
 }
+
+/* Standalone policy and support pages do not use the intro transition. */
+.letter-screen.info-page {
+  opacity: 1;
+}
+
+.info-page .page-back-link {
+  display: inline-block;
+  margin-bottom: 26px;
+  color: #d7c48d;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.info-page .page-back-link:hover,
+.info-page .page-back-link:focus-visible {
+  color: #f2f0e8;
+  text-decoration: underline;
+}
  
 @keyframes letterReveal {
   from {
@@ -390,6 +409,36 @@ body {
   color: #d7c48d;
   box-shadow: 0 0 14px rgba(215, 196, 141, 0.16);
 }
+
+.join-form .join-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: rgba(242, 240, 232, 0.82);
+  font-size: 1rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.join-form input[type="checkbox"] {
+  width: auto;
+  flex: 0 0 auto;
+  margin: 4px 0 0;
+  padding: 0;
+  accent-color: #d7c48d;
+}
+
+.join-form .join-privacy {
+  margin: 0;
+  color: rgba(242, 240, 232, 0.66);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.join-form .join-privacy a {
+  color: #d7c48d;
+}
  
 /* SIMPLE CONTENT SECTIONS */
 
@@ -530,4 +579,3 @@ body {
     margin-top: 52px;
   }
 }
- 

@@ -1,6 +1,16 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 301
+
+[[redirects]]
+  from = "/support"
+  to = "/support.html"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
